@@ -1,7 +1,7 @@
 \name{extra_motif_seq}
 \alias{extra_motif_seq}
 \title{
-Scanning the motifs in the transcript.
+Scanning the motifs in the transcripts.
 }
 \description{
 For a given motif, all transcript sequences will be scanned and then according to the size of "upstream" "downstream",

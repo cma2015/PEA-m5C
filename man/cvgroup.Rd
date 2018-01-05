@@ -18,6 +18,7 @@ cvgroup(data,cvnum,seed=1234)
 \arguments{
   \item{data}{A numeric vector, the number of samples (such as 1:1000)}
   \item{cvnum}{A numeric value, the number of Cross validation group (k-fold)}
+  \item{seed}{Arguments passed to set.seed()}
   }
 
 \details{
@@ -50,5 +51,3 @@ cvgroup(1:100,5)
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
-\keyword{ ~kwd1 }% use one of  RShowDoc("KEYWORDS")
-\keyword{ ~kwd2 }% __ONLY ONE__ keyword per line

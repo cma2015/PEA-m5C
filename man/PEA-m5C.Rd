@@ -2,17 +2,17 @@
 \alias{predict_m5c}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-Predict m5C sites by PEA-m5C
+Predicting m5C sites by PEA-m5C
 }
 \description{
-The m5C methylation level of the detection sequences was evaluated by the proposed m5C random forest models.
+Predicting m5C information of the sequences by the proposed m5C models based Random Forest.
 }
 \usage{
 predict_m5c(sample_feature)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-   \item{sample_feature}{A dataframe or list for undetected sequence.}
+   \item{sample_feature}{A dataframe or list for target sequence.}
 }
 \details{
 %%  ~~ If necessary, more details than the description above ~~

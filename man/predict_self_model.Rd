@@ -2,19 +2,20 @@
 \alias{predict_self_model}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-Predict CMRs sites by self models
+Predict CMRs sites by user-specific models
 }
 \description{
-The CMRs information of the detection sequences was evaluated by the self models.
+The CMRs information of the detection sequences was evaluated by the user-specific models.
 }
 \usage{
 predict_self_model(models,sequence_dir,end = 5,up = 5)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-   \item{models}{A dataframe self models and selected feature.}
-   \item{sequence_dir}{A path  representing the file name of the sequence in FASTA format.}
-   \item{...}{}
+   \item{models}{A dataframe self models and selected feature based extra_model.}
+   \item{sequence_dir}{A path representing the filename of the sequence in FASTA format.}
+   \item{up}{A integer number, the length of the upstream sequence required.}
+   \item{end}{A integer number, the length of the downstream sequence required.}
 }
 \details{
 %%  ~~ If necessary, more details than the description above ~~
@@ -52,5 +53,4 @@ table(eee[,4])
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
-\keyword{ ~kwd1 }% use one of  RShowDoc("KEYWORDS")
-\keyword{ ~kwd2 }% __ONLY ONE__ keyword per line
+

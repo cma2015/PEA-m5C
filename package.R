@@ -9,7 +9,7 @@ check()
 install.packages("/home/malab14/research/DeepRNAMethy/script/PEA_1.0.tar.gz", repos = NULL, type="source")
 
 
-pack <- "PEA"
+pack <- "PEAm5C"
 path <- find.package(pack)
 system(paste(shQuote(file.path(R.home("bin"), "R")),
              "CMD", "Rd2pdf", shQuote(path)))
