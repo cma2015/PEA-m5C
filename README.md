@@ -43,12 +43,10 @@ install.packages("Download path/PEAm5C_0.11.tar.gz",repos = NULL, type = "source
 * Read FASTA file and motif scanning <br>
 * Feature encoding  of sequences <br>
 * m5C prediction using Random Forest models <br>
-<br>
 #### user-defined model<br>
 * Provide positive and negative sample information<br>
 * Automatic verification of the training process<br>
 * Prediction using user-defined models <br>
- <br>
 ## Quick start <br>
 The basic data set can be finded in [data](https://github.com/cma2015/PEA-m5C/tree/master/data). <br>
 More details can be seen from [user manual](https://github.com/cma2015/PEA-m5C/blob/master/PEAm5c.pdf).
