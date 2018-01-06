@@ -5,20 +5,21 @@
 Predicting m5C sites by PEA-m5C
 }
 \description{
-Predicting m5C information of the sequences by the proposed m5C models based Random Forest.
+Predicting m5C modification sites based on PEA-m5C. PEA-m5C provide four threshold (VHmode: very high confidence with specificity of 99 precent; HMode: high confidence mode with specificity of 95 precent; NMode: normal confidence with specificity of 90 precent; LMode: low confidence mode with specificity of 85 precent) to meet different requirements.
 }
 \usage{
-predict_m5c(sample_feature)
+predict_m5c(sample_feature,mode=NULL)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-   \item{sample_feature}{A dataframe or list for target sequence.}
+   \item{sample_feature}{A dataframe or list of RNA sequence.}
+   \item{mode}{A string character of .}
 }
 \details{
 %%  ~~ If necessary, more details than the description above ~~
 }
 \value{
-A matrix with transcript , its sites, predicted score and m5C level.
+A matrix with 4 columns including transcripts ID, candidate m5C position, probabilistic scores for being m5C and which mode of m5C.
 }
 \references{
 %% ~put references to the literature/web site here ~

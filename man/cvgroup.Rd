@@ -5,10 +5,8 @@
 Cross validation grouping
 }
 \description{
-Grouping data sets by cross validation
+Grouping datasets for cross validation.
 }
-
-
 
 \usage{
 cvgroup(data,cvnum,seed=1234)
@@ -16,9 +14,9 @@ cvgroup(data,cvnum,seed=1234)
 
 
 \arguments{
-  \item{data}{A numeric vector, the number of samples (such as 1:1000)}
-  \item{cvnum}{A numeric value, the number of Cross validation group (k-fold)}
-  \item{seed}{Arguments passed to set.seed()}
+  \item{data}{A string vector representing the names of training samples or a string vector recording the names of training samples.}
+  \item{cvnum}{which specifies the number of fold in cross-validation.}
+  \item{seed}{A numeric value used for generating random seed.}
   }
 
 \details{

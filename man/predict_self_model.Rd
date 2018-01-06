@@ -2,10 +2,10 @@
 \alias{predict_self_model}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-Predict CMRs sites by user-specific models
+Predicting CMRs sites by user-specific model
 }
 \description{
-The CMRs information of the detection sequences was evaluated by the user-specific models.
+Predicting the m5C through user-specific squences.
 }
 \usage{
 predict_self_model(models,sequence_dir,end = 5,up = 5)

@@ -2,10 +2,10 @@
 \alias{PEA_ml}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-Machine learning-based Random Forest algorithm and information gain rank for sequences
+Transcriptome-wide m5C predictor training under machine learning framework.
 }
 \description{
-First of all, the function separate the positive and negative sample to the independent test set automatically according to setting and training set, concentrated training shall be carried out in accordance with the cross validation in training and assessment, in the results returned to characteristics of the evaluation, prediction score and evaluation as well as the sample group. In this case, the function can define the proportion of positive and negative samples (when negative sample size can be selected to maintain multiple models), and provide two methods of random forest and support vector machine.
+This function used for transcriptome-wide m5C predictor construction. First, the fixed number (parameter "independent_num") of independent samples (positive and negative samples) are randomly sampled from training samples. The the k-fold cross-validation would be performed based on the training samples but excluding the independent samples. Finally, the m5C predictor, performance evaluation on independent test datasets and cross-validation results will be returned.
 }
 \usage{
 PEA_ml(pos_sample,neg_sample,independent_num=100,ig="ALL",
@@ -16,7 +16,7 @@ PEA_ml(pos_sample,neg_sample,independent_num=100,ig="ALL",
   \item{pos_sample}{A numeric matrix recording the features for positive sample.}
   \item{neg_sample}{A numeric matrix recording the features for nagative sample.}
   \item{independent_num}{A numeric value, the number of independent sample }
-  \item{ig}{A numeric value,vector or "ALL", the number of selected features based the top of information gain rank, the "ALL" means all features}
+  \item{feature_num}{A numeric value, the number of selected features based the top of information gain rank, the "ALL" means all features}
   \item{modeltype}{A character string, which specifies machine learing method.}
   \item{cvnum}{An integer value, the number of fold for cross validation.}
   \item{repeatTimes}{An integer value,If the negative sample is larger than the limit of the positive sample, the number of the negative samples and the number of samples of the positive sample is repeated

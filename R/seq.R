@@ -168,7 +168,7 @@ extra_motif_seq <- function(input_seq_dir,text='c',up=5,end=5) {
 
 ###########  predicted m5c position  ########
 #' @export
-predict_m5c <- function(sample_feature){
+predict_m5c <- function(sample_feature,mode=NULL){
   cutoff.k <- function (attrs, k) {
     if (dim(attrs)[1] == 0)
       return(character(0))
@@ -199,8 +199,16 @@ predict_m5c <- function(sample_feature){
   res_table[which(res>0.891),4] <- "VH_m5C"
 
   colnames(res_table) <- c("transcript","position","score","mode")
+
+  n <- switch(mode,
+              NULL=1:nrow(res_table),
+              VH=which(res>0.891),
+              H=which(res>0.765),
+              N=which(res>0.622),
+              L=which(res>0.484))
+
   cat("over")
-  return(res_table)
+  return(res_table[n,])
 }
 
 #

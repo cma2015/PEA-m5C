@@ -1,21 +1,20 @@
 \name{extra_motif_seq}
 \alias{extra_motif_seq}
 \title{
-Scanning the motifs in the transcripts.
+Scanning specific motifs in the transcripts.
 }
 \description{
-For a given motif, all transcript sequences will be scanned and then according to the size of "upstream" "downstream",
-the output fits the sequence of length.
+For a given motif, all transcript sequences will be scanned according to the user-specific flanking sequence length (upstream/downstream), then the fixed length of sequences centered on motif will be returned.
 }
 \usage{
 extra_motif_seq(input_seq_dir,text='c',up=5,end=5)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-   \item{input_seq_dir}{A path character, representing the file name of the sequence in FASTA format.}
+   \item{input_seq_dir}{A string character, representing the directory of the sequence in FASTA format.}
    \item{text}{A string character, which specifies the motif to be searched.}
-   \item{up}{A integer number, the length of the upstream sequence required.}
-   \item{end}{A integer number, the length of the downstream sequence required.}
+   \item{up}{A integer number, the length of upstream sequence to be extracted.}
+   \item{end}{A integer number, the length of downstream sequence to be extracted.}
 }
 \details{
 %%  ~~ If necessary, more details than the description above ~~

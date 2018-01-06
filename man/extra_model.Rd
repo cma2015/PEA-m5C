@@ -2,24 +2,24 @@
 \alias{extra_model}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-extracting model from PEA_ml
+Extracting model from PEA_ml
 }
 \description{
-Proposing the desired model from the established result information
+Extracting the user-specific model from function "PEA_ml"
 }
 \usage{
 extra_model(res,ignum)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{res}{a list , result obtained from PEA_ml}
+  \item{res}{A list, which can be obtained from function "PEA_ml"}
   \item{ignum}{a integer number,which indicates the number of features}}
 
 \details{
 %%  ~~ If necessary, more details than the description above ~~
 }
 \value{
-models and selected feature
+models and selected features
 }
 \references{
 %% ~put references to the literature/web site here ~

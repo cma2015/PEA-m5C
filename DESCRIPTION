@@ -6,7 +6,7 @@ Author: Jie Song, Jingjing Zhai amd Chuang Ma
 Maintainer: Jie Song <q2516581@gmail.com>
 Depends: R (>= 3.3.2), seqinr (>= 3.3-6), stringr (>= 1.2.0), randomForest (>= 4.6-12),ggplot2 (>= 2.2.1)
 Imports: pROC (>= 1.5.4), PRROC (>= 1.0-5),FSelector (>= 0.21),e1071 (>= 1.6-8)
-Description: PEAm5C is an integrated R toolkit designed to identify plants' m5C sites. The toolkit contains functions such as analysis sequence characteristics, m5C prediction from transcriptional group size, and custom build recognition model.
+Description: PEA-m5C is designed for transcriptome-wide m5C annotation. This package contains a set of functions such as feature encoding, cross validation, transcriptome-wide m5C annotation and user-specific model training.
 License: GPL (>= 2)
 Encoding: UTF-8
 LazyData: true

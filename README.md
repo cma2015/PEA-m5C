@@ -1,4 +1,4 @@
-# **PEAm5C**: An integrated R toolkit for plant m5C analysis. </br>
+# **PEAm5C**: An R package for plant m5C analysis. </br>
 ![](https://halobi.com/wp-content/uploads/2016/08/r_logo.png "R logo")
 ![](https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSvCvZWbl922EJkjahQ5gmTpcvsYr3ujQBpMdyX-YG99vGWfTAmfw "linux logo")
 ![](https://tctechcrunch2011.files.wordpress.com/2014/06/apple_topic.png?w=220)
@@ -43,7 +43,7 @@ install.packages("Download path/PEAm5C_0.11.tar.gz",repos = NULL, type = "source
 * Read FASTA file and motif scanning <br>
 * Feature encoding  of sequences <br>
 * m5C prediction using Random Forest models <br>
-#### user-defined model<br>
+#### User-defined model<br>
 * Provide positive and negative sample information<br>
 * Automatic verification of the training process<br>
 * Prediction using user-defined models <br>
