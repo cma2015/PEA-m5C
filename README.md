@@ -55,16 +55,16 @@ More details can be seen from [user manual](https://github.com/cma2015/PEA-m5C/b
 #### 1.Predicting m5C sites <br>
 * 1.1 Read FASTA file and motif scanning <br>
 ```R
-aaa <- extra_motif_seq(input_seq_dir = paste0(system.file(package = "PEAm5c"),"/data/cdna.fa"),up = 5)
-aaa <- lapply(aaa, c2s)
+seq <- extra_motif_seq(input_seq_dir = paste0(system.file(package = "PEAm5c"),"/data/cdna.fa"),up = 5)
+seq <- lapply(seq, c2s)
 ```
 * 1.2 Feature encoding  of sequences <br>
 ```R
-bbb <- FeatureExtract(aaa)
+seq_feature <- FeatureExtract(seq)
 ```
 * 1.3 m5C prediction using Random Forest models  <br>
 ```R
-ccc <- predict_m5c(bbb)
+res <- predict_m5c(seq_feature)
 ```
 #### 2.User-defined model <br>
 * 2.1 Provide positive and negative sample information <br>
@@ -74,15 +74,15 @@ load(paste0(system.file(package = "PEAm5c"),"/data/samples.Rds"))
 ```
 * 2.2 Automatic verification of the training process <br>
 ```R
-aaa <- PEA_ml(pos_sample = pos_sample,neg_sample = neg_sample)
-ddd <- extra_model(res = aaa)
-ddd
+seq <- PEA_ml(pos_sample = pos_sample,neg_sample = neg_sample)
+model <- extra_model(res = seq)
+model
 
 ```
 * 2.3 Prediction using user-defined models <br>
 ```R
-eee <- predict_self_model(models = ddd,sequence_dir = paste0(system.file(package = "PEAm5c"),"/data/cdna.fa"))
-table(eee[,4])
+res <- predict_self_model(models = model,sequence_dir = paste0(system.file(package = "PEAm5c"),"/data/cdna.fa"))
+table(res[,4])
 ```
 
 
