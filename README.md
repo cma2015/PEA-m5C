@@ -85,6 +85,8 @@ res <- predict_self_model(models = model,sequence_dir = paste0(system.file(packa
 table(res[,4])
 ```
 
+## Citation
+Song, J., Zhai, J., Bian, E., Song, Y., Yu, J., & Ma, C. (2018). [Transcriptome-Wide Annotation of m5C RNA Modifications Using Machine Learning.](https://www.frontiersin.org/articles/10.3389/fpls.2018.00519/full) Frontiers in plant science, 9, 519.
 
 ## Ask questions
 Please use [PEAm5C/issues](https://github.com/cma2015/PEAm5C/issues) for how to use PEAm5C and reporting bugs.
